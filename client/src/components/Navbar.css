@@ -1,0 +1,35 @@
+
+
+.ul-nav{
+    display: flex;
+    gap: 4.8rem;
+    align-items: center;
+
+}
+
+.ul-nav li{
+    list-style: none;
+    margin-right: 2rem;
+    padding: 0 1rem;
+    position: relative;
+}
+.ul-nav li .nav-link{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+.ul-nav li .nav-link:hover{
+    color: orange;
+}
+.ul-nav li .nav-link:hover::after{
+    content: '';
+    width: 30%;
+    height: 2px;
+    background: orange;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
